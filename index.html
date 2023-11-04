@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Encuesta Para Developers</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">Formulario de encuesta para developers</h1>
+    <p id="description">Gracias por querer contarnos tu experiencia como developer</p>
+    <form id="survey-form">
+      <fieldset id= "personal-data" >
+        <label id="name-label">Nombre: <input placeholder="Enter your name." required id="name" name="name" type="text"/></label>
+        <label id="email-label">Ingresa tu E-mail: <input placeholder= "Enter your email." required id="email" name="email" type="email"/></label>
+        <label id="number-label">Elige tu edad: <input placeholder="Enter your age." type="number" required id="number" class="number-age" min="18" max="60" name="age"/></label>
+        
+        <label id="label-referrer">Elige el campo en el que mas te desempeñas como developer: 
+          <select id="dropdown" name="dropdown">
+            <option value="">(selecciona uno)
+            <option value="1">Frontend</option>
+            <option value="2">Backend</option>
+            <option value="3">Diseño UX/UI</option>
+            <option value="4">Cloud computing</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset id="botton">
+        <p>Experiencia como developer</p>
+        <label id="junior-label">
+          <input value="junior-experience" id="junior" name="experience" type="radio" class="inline"/>Junior
+        </label>
+        <label id="semisenior-label"><input value="semisenior-experience" id="semisenior" name="experience" class="inline" type="radio"/>Semisenior</label>
+        <label id= "senior-label>"><input name="experience" id="senior" value="senior" type="radio" class="inline" />Senior</label>
+      </fieldset>
+      <fieldset>
+        <p>¿Amas la programacion?</p>
+        <label id="y"><input name="question"class="inline" type="radio" value="y">Si</label>
+        </label>
+        <label id="n"><input id="no" name="question" value="n" class="inline" type="radio"/>No </label>
+        <p>Tecnologias mas dominada:</p>
+        <label id="java-label"><input value="javascript" name="java" id="java" type="checkbox" class="inline"/>Java</label>
+        <label id="javascript"><input value="javascript" name="javascript" type="checkbox" name="javascript" class="inline"/>Javascript</label>
+        <label id="python"><input name="python" value="py" id="python" class="inline" type="checkbox" />Python</label>
+        <p class="history">Cuentanos de ti:</p>
+        <label id="text"><textarea placeholder="Me encanta programar..." id="bio" rows="3" cols="30"name="bio" ></textarea></label>
+
+      </fieldset>
+      <button  id="submit"type="submit" value="Submit">Enviar</button>
+    </form>
+  </body>
+  
+</html>
